@@ -1,0 +1,36 @@
+<section>
+    <div class="container">
+        <div>
+            <h2 class="crm-choose">Choose a page</h2>
+            <span  ng-repeat="page in CrmCtrl.pages">
+			     <a style="padding-right: 10px;" href="#/website/crm"  class="crm-page" ng-click="CrmCtrl.changePage( page, $index, page.name )" >{{page.name}} </a>
+		  </span>
+            <div class="crm-current" ng-hide="CrmCtrl.choose">
+                <h2 class="crm-current">Current images on {{CrmCtrl.pageName}}</h2>
+                <p>Select an image to replace</p>
+                <span class="page-images" ng-repeat="( key, pic ) in CrmCtrl.pagePics">
+                    <img ng-click="CrmCtrl.selectPic( pic, $index, key ); CrmCtrl.selectImage($index)" ng-src="{{pic}}" style="height: 100px; width: 150px;" ng-class="{ 'selected-image': $index === CrmCtrl.selectIdx }"  alt="">
+                </span>
+                <div style="padding-top: 50px;" class="picSelection">
+                    <p>Replace selected image above with an image below: </p>
+                
+                    <div class="crm-pages" style="padding-top: 20px;">
+                        <span ng-repeat="pic in CrmCtrl.allPics">
+                            <img style="width: 100px; height: 100px;" ng-click="CrmCtrl.updatePage( pic )" ng-src="{{pic.original_size.url}}"></img>
+                        </span>
+                    </div>
+                </div>
+            </div>
+	   </div>
+    </div>    
+</section>
+
+
+
+
+
+
+
+
+
+

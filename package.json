@@ -1,0 +1,27 @@
+{
+  "name": "pfk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abe m",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.0",
+    "braintree": "^1.37.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^5.7.0",
+    "mongoose": "^4.4.7",
+    "morgan": "^1.7.0",
+    "node-localstorage": "^1.1.2",
+    "nodemailer": "^2.3.2",
+    "nodemailer-smtp-transport": "^2.4.2",
+    "request-promise": "^4.1.1",
+    "tumblr": "^0.4.1",
+    "tumblr.js": "0.0.7"
+  }
+}

@@ -1,65 +1,42 @@
-//Bring in packages
-var express         = require( 'express' )
-var app             = express()
-var morgan          = require( 'morgan' )
-var bodyParser      = require( 'body-parser' )
-var mongoose        = require( 'mongoose' )
-var cors            = require( 'cors' )
-var path            = require( 'path' )
+//main starting point of the application
+const express = require('express');
+const http = require('http')
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
+const mongoose = require('mongoose')
+const cors = require('cors')
 
-var config          = require( './config')
-// var userRoutes      = require( './routes/userRoutes' )
-// var authRoutes      = require( './routes/authRoutes' )
-// var blogRoutes      = require( './routes/blogRoutes')
-// var homePageRoutes      = require( './routes/homePageRoutes')
-// var whoWeAreRoutes   = require( './routes/whoWeAreRoutes')
-// var teamBiosRoutes   = require( './routes/teamBiosRoutes')
+//create an instance of express
+const app = express()
+const router = require('./router')
 
+//DB setup
+mongoose.connect('mongodb://localhost:auth/auth')
 
-//set up database
-mongoose.connect( config.database )
+//App setup (setting up express)
 
-// MODELS
-var Page = require( './models/pageModel.js' )
+//morgan to log incoming requests
+app.use(morgan('combined'))
 
-// app.set( 'views', path.join(__dirname, 'views'))
-app.set( 'view engine', 'jade' )
-app.use( express.static( path.join(__dirname, 'public')))
+//allow whatever domain or port request is coming from
+//let them through
+app.use(cors())
 
-//configure bodyParser
-app.use( bodyParser.urlencoded({ extended: true }) )
-app.use( bodyParser.json() )
-
-//configure cors
-app.use( cors() )
-
-//configure morgan
-app.use( morgan( 'dev' ) )
-
-//test route
-// app.get('/', function( req, res ) {
-//   res.json( { message: 'this is my app' })
-// })
-
-// app.get( '*', function( req, res) {
-//   res.sendFile( path.join(__dirname + '/public/app/index.html' ));
-// } );
-
-app.get( '/', function( req, res ) {
-  res.sendFile( __dirname + '/public/app/index.html' )
-} )
-
-//require routes
-// app.use(authRoutes)
-// app.use(userRoutes)
-// app.use(blogRoutes)
-// app.use(homePageRoutes)
-var apiRoutes = require('./routes/routes.js')
-app.use( '/api', apiRoutes)
+//parse incoming request into JSON 
+//it will do so no matter what the request type is
+app.use(bodyParser.json({ type: '*/*'}))
 
 
+//call the router with our app
+router(app)
 
 
-app.listen( config.port, function( req, res ) {
-  console.log( 'app listening on port: ' + config.port)
-})
+//server setup
+const port = process.env.PORT || 3000
+
+//create HTTP server and forward it to our express application
+const server = http.createServer(app)
+
+//tell server to listen
+server.listen(port)
+console.log('server listen on: ', port)

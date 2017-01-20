@@ -2,6 +2,7 @@
 
 const passport = require('passport') 
 const Authentication = require('./controllers/authentication')
+const PageCtrl = require('./controllers/pageController')
 const passportService = require('./services/passport')
 
 //by default passport will set up a cookie-based session, but we are using jwt
@@ -26,5 +27,9 @@ module.exports = function(app){
     app.post('/signin', requireSignin, Authentication.signin)
     //before user can go to signin route handler, signin is required
 
-    app.post('/signup', Authentication.signup)
+    app.post('/signup', requireAuth, Authentication.signup)
+    app.get( '/page', requireAuth, PageCtrl.getPage )
+	app.post( '/newpage', requireAuth, PageCtrl.newPage )
+	app.patch( '/image', requireAuth, PageCtrl.changeImage )
+
 }

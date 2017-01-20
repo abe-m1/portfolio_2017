@@ -26,6 +26,7 @@ exports.signup = function(req, res, next){
             email: email,
             password: password
         })
+        
 
         user.save(function(err){
             if (err) { return next(err)}

@@ -51,7 +51,7 @@
                 return token.decode()
             })
 
-            return promist
+            return promise
         }
 
         return exports;

@@ -15,4 +15,4 @@
     return exports
   }
    module.factory('jsonApplicationTypeService', jsonApplicationTypeService);
-}(angular.module("Yobs.Services")));
+}(angular.module("MyPortfolio.Services")));

@@ -24,7 +24,7 @@ angular.module('userApp', [
         
          .state('dashboard', {
           url: '/dashboard',
-          templateUrl: 'app/views/crm/dashboard.html',
+          templateUrl: 'app/components/crm/dashboard.html',
           
         })
 

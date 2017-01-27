@@ -10,7 +10,7 @@
 
           .state('dashboard', {
           url: '/dashboard',
-          templateUrl: 'app/views/crm/dashboard.html',
+          templateUrl: 'components/crm/dashboard.html',
           
         })
 

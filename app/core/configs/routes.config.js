@@ -10,7 +10,18 @@
 
           .state('dashboard', {
           url: '/dashboard',
-          templateUrl: 'components/crm/dashboard.html',
+          
+
+           views: {
+             "": { templateUrl: 'components/crm/dashboard.html'},
+
+           
+
+            // the child views will be defined here (absolutely named)
+            'columnOne@dashboard': { templateUrl: 'components/crm/crm.html' }
+
+            
+        }
           
         })
 

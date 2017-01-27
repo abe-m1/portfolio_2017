@@ -14,7 +14,8 @@
              "": { templateUrl: 'components/crm/dashboard.html'},
 
             // the child views will be defined here (absolutely named)
-            'columnOne@dashboard': { templateUrl: 'components/crm/crm.html' }            
+            'columnOne@dashboard': { templateUrl: 'components/crm/crm.html' },
+            'columnTwo@dashboard': { templateUrl: 'components/crm/home.html' }             
             }
         })
 

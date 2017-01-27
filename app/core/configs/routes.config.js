@@ -10,32 +10,28 @@
 
           .state('dashboard', {
           url: '/dashboard',
-          
-
-           views: {
+            views: {
              "": { templateUrl: 'components/crm/dashboard.html'},
 
-           
-
             // the child views will be defined here (absolutely named)
-            'columnOne@dashboard': { templateUrl: 'components/crm/crm.html' }
-
-            
-        }
-          
+            'columnOne@dashboard': { templateUrl: 'components/crm/crm.html' }            
+            }
         })
 
          .state('website', {
            url: '/website',
-        //    template: '<h1> why dont you work </h1>'
             templateUrl: 'components/website/website.html',
         //    controller: 'websiteCtrl as websiteCtrl'
-          
-         })
+        })
+
+        .state('login', {
+           url: '/login',
+            templateUrl: 'components/website/login.html'
+        })
 
 
         
-        //   $urlRouterProvider.otherwise('/website');
+        $urlRouterProvider.otherwise('/website');
         }
 
 

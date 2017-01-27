@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <!-- FOR ANGULAR ROUTING -->
+    <base href="/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="stylesheets/extra.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- load angular and angular-route via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-messages.min.js"></script>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+    <!-- controllers -->
+    <!--<script src="app.js"></script>-->
+    <!--<script src="app/views/crm/alertController.js"></script>-->
+	<!--<script src="app/views/crm/crm.js"></script>-->
+    <script src="components/website/websiteCtrl.js"></script>
+    
+  </head>
+
+  <body ng-app="MyPortfolio">
+    <!-- ANGULAR VIEWS -->
+      <div ui-view ></div>
+
+
+      <script type="text/javascript" src="core/modules/app.modules.js"></script>
+  <script type="text/javascript" src="core/modules/app.controllers.js"></script>
+  <script type="text/javascript" src="core/modules/app.configs.js"></script>
+  <script type="text/javascript" src="core/modules/app.services.js"></script>
+  <script type="text/javascript" src="core/modules/app.filters.js"></script>
+  <script type="text/javascript" src="core/modules/app.directives.js"></script>
+  <script type="text/javascript" src="core/modules/app.constants.js"></script>
+  <script type="text/javascript" src="core/configs/routes.config.js"></script>
+  <!--<script type="text/javascript" src="core/configs/httpinterceptor.config.js"></script>-->
+  <!--<script type="text/javascript" src="core/services/jsonApplicationType.service.js"></script>-->
+  <!--<script type="text/javascript" src="core/services/tokenSigning.service.js"></script>-->
+  <!--<script type="text/javascript" src="core/services/token.service.js"></script>-->
+  <!--<script type="text/javascript" src="core/services/auth.service.js"></script>-->
+  <!--<script type="text/javascript" src="core/services/url.factory.js"></script>-->
+
+  <!--<script type="text/javascript" src="components/employer/signup/employer-signup.controller.js"></script>
+  <script type="text/javascript" src="core/directives/forminput.directive.js"></script>
+  <script type="text/javascript" src="core/directives/comparepassword.js"></script>
+  <script type="text/javascript" src="components/candidate/onboarding/onboarding-controller.js"></script>
+  <script type="text/javascript" src="components/candidate/howItWorks/howItWorks-controller.js"></script>
+  <script type="text/javascript" src="components/candidate/signup/candidate.signup.controller.js"></script>
+  <script type="text/javascript" src="components/candidate/jobs/jobs-controller.js"></script>
+  <script type="text/javascript" src="components/candidate/video/postvideo/postvideo-controller.js"></script>
+  <script type="text/javascript" src="core/directives/searchnav.js"></script>
+  <script type="text/javascript" src="core/directives/candidate.directive.js"></script>
+  <script type="text/javascript" src="components/employer/import/import-controller.js"></script>
+  <script type="text/javascript" src="components/employer/candidate/candidate-info-controller.js"></script>
+  <script type="text/javascript" src="components/employer/jobs/postjob/postjob-controller.js"></script>
+  <script type="text/javascript" src="core/directives/yobsnav.directive.js"></script>
+  <script type="text/javascript" src="components/employer/onboarding/onboarding-controller.js"></script>
+  <script type="text/javascript" src="components/candidate/dashboard/dashboard-controller.js"></script>
+  <script type="text/javascript" src="core/directives/yobs-loader.directive.js"></script>
+  <script type="text/javascript" src="components/candidate/employer/employerinfo-controller.js"></script>
+  <script type="text/javascript" src="components/candidate/softskills/softskills-controller.js"></script>
+  <script type="text/javascript" src="components/candidate/apply/apply-controller.js"></script>
+
+  <script type="text/javascript" src="core/directives/candidatecard.directive.js"></script>
+  <script type="text/javascript" src="core/directives/employercandidatefilter.directive.js"></script>
+  <script type="text/javascript" src="core/directives/employercandidatepercent.directive.js"></script>
+
+  <script type="text/javascript" src="core/services/localstoragemanager.service.js"></script>
+
+  <script type="text/javascript" src="core/services/industry.service.js"></script>
+  <script type="text/javascript" src="core/services/user.service.js"></script>
+  <script type="text/javascript" src="core/services/alerting.service.js"></script>
+  <script type="text/javascript" src="core/constants/app.constants.js"></script>
+  <script type="text/javascript" src="core/services/loader.service.js"></script>
+  <script type="text/javascript" src="core/services/employee.service.js"></script>
+  <script type="text/javascript" src="components/employer/login/employer-login.controller.js"></script>
+  <script type="text/javascript" src="core/services/sessionstoragemanager.service.js"></script>
+  <script type="text/javascript" src="components/candidate/login/candidate-login.controller.js"></script>
+  <script type="text/javascript" src="core/configs/events.config.js"></script>
+  <script type="text/javascript" src="core/filters/common.filter.js"></script>-->
+  </body>
+</html>

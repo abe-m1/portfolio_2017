@@ -30,7 +30,7 @@ angular.module('userApp', [
 
          .state('website', {
            url: '/website',
-           templateUrl: 'app/views/website/website.html',
+           templateUrl: 'app/components/website/website.html',
            controller: 'websiteCtrl as websiteCtrl'
           
          })

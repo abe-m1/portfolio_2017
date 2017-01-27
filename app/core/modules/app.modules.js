@@ -2,7 +2,7 @@
   'use strict'
 
   angular
-    .module('MyProtfolio', ['MyPortfolio.Controllers',
+    .module('MyPortfolio', ['MyPortfolio.Controllers',
       'MyPortfolio.Services',
       'MyPortfolio.Configs',
       'MyPortfolio.Directives',

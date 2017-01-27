@@ -1,42 +1,57 @@
-//main starting point of the application
-const express = require('express');
-const http = require('http')
-const bodyParser = require('body-parser')
-const morgan = require('morgan')
-const mongoose = require('mongoose')
-const cors = require('cors')
+// //main starting point of the application
+// const express = require('express');
+// const http = require('http')
+// const bodyParser = require('body-parser')
+// const morgan = require('morgan')
+// const mongoose = require('mongoose')
+// const cors = require('cors')
 
-//create an instance of express
-const app = express()
-const router = require('./router')
+// //create an instance of express
+// const app = express()
+// const router = require('./router')
 
-//DB setup
-mongoose.connect('mongodb://localhost:auth/auth')
+// //DB setup
+// mongoose.connect('mongodb://localhost:auth/auth')
 
-//App setup (setting up express)
+// //App setup (setting up express)
 
-//morgan to log incoming requests
-app.use(morgan('combined'))
+// //morgan to log incoming requests
+// app.use(morgan('combined'))
 
-//allow whatever domain or port request is coming from
-//let them through
-app.use(cors())
+// //allow whatever domain or port request is coming from
+// //let them through
+// app.use(cors())
 
-//parse incoming request into JSON 
-//it will do so no matter what the request type is
-app.use(bodyParser.json({ type: '*/*'}))
-
-
-//call the router with our app
-router(app)
+// //parse incoming request into JSON 
+// //it will do so no matter what the request type is
+// app.use(bodyParser.json({ type: '*/*'}))
 
 
-//server setup
+// //call the router with our app
+// router(app)
+
+
+// //server setup
+// const port = process.env.PORT || 3000
+
+// //create HTTP server and forward it to our express application
+// const server = http.createServer(app)
+
+// //tell server to listen
+// server.listen(port)
+// console.log('server listen on: ', port)
+
+var express = require('express'),
+    app = express();
+
 const port = process.env.PORT || 3000
 
-//create HTTP server and forward it to our express application
-const server = http.createServer(app)
+app.use(express.static('app'));
 
-//tell server to listen
-server.listen(port)
-console.log('server listen on: ', port)
+app.get('/', function (req, res, next) {
+    res.sendFile('index.html', { root: __dirname });
+});
+
+app.listen(port, function () {
+    console.log('Up and running on ', port);
+});

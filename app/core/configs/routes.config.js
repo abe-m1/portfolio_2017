@@ -27,7 +27,8 @@
 
         .state('login', {
            url: '/login',
-            templateUrl: 'components/website/login.html'
+            templateUrl: 'components/website/login/login.html',
+            controller: 'LoginCtrl'
         })
 
 

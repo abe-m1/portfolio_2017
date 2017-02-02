@@ -2,11 +2,11 @@
 
   "use strict";
   var LoginCtrl;
-  LoginCtrl.$inject = [];
+  LoginCtrl.$inject = ['authService'];
 
 
 
-  function LoginCtrl() {
+  function LoginCtrl(authService) {
     
    
 

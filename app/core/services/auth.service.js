@@ -9,7 +9,7 @@
             logIn: logIn,
             isLoggedIn: isLoggedIn,
             logOut: logOut,
-            refreshToken: refereshToken,
+            // refreshToken: refereshToken,
             getCurrentUser: getCurrentUser
         }
 

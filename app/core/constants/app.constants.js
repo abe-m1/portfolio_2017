@@ -6,4 +6,4 @@
 	
 
 	
-}(angular.module('Yobs.Constants')));
+}(angular.module('MyPortfolio.Constants')));

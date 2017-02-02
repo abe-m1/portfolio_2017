@@ -1,17 +1,25 @@
-angular.module('website.controller', [])
-  .run(['$anchorScroll', function($anchorScroll) {
-    $anchorScroll.yOffset = 200;   // always scroll by 50 extra pixels
-  }])
+(function(module) {
 
-  .controller('websiteCtrl', function($scope, $http, $location, $rootScope, $log,$anchorScroll, $state, $stateParams){
-    console.log('website controller')
-    var vm = this
+  "use strict";
+  var WebsiteCtrl;
+  WebsiteCtrl.$inject = [];
 
 
 
+  function WebsiteCtrl() {
+    
+   
+
+    var vm = this;
+    console.log('i am hooked up')
+  
+
+  }
 
 
-})
+  module.controller('WebsiteCtrl', WebsiteCtrl);
+
+})(angular.module('MyPortfolio.Controllers'));
 
 
 

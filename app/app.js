@@ -7,10 +7,7 @@ angular.module('userApp', [
   'alert.controller'
   ])
 
-  .controller('mainController', function(){
-    var vm = this
-    console.log('this works')
-  })
+
 
 
 

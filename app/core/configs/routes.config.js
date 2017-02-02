@@ -22,7 +22,7 @@
          .state('website', {
            url: '/website',
             templateUrl: 'components/website/website.html',
-        //    controller: 'websiteCtrl as websiteCtrl'
+            controller: 'WebsiteCtrl'
         })
 
         .state('login', {

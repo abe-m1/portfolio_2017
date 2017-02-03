@@ -17,7 +17,7 @@
             // $log.info('auth service : attempting login', urlFactory + '/user/login)
             return $http({
                 method: 'POST',
-                url: urlFactory + '/user/login',
+                url: urlFactory + '/user',
                 data: data
             })
         }

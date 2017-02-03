@@ -8,7 +8,7 @@
 
   function LoginCtrl(authService) {
     
-   
+   console.log('login running')
 
     var vm = this;
     vm.loginData = {
@@ -16,9 +16,9 @@
       password: ''
     }
     vm.error = ""
-
+    vm.hello = 'hello'
     vm.login = function() {
-
+        console.log('button pressed')
       
 
       vm.data = { 'email': vm.loginData.email, 'password': vm.loginData.password };

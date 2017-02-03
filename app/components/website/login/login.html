@@ -1,13 +1,15 @@
 <section>
     <div class="container">
-       
-     
+       <h4>testing</h4>
+     {{loginCtrl.hello}}
+    
         <div class="row">
           <div class="col-md-4 col-md-offset-4">
           <form ng-submit="loginCtrl.login()" novalidate name="loginForm">
-              <div forminput> <input type="email" name="email" ng-pattern=""  ng-model="loginCtrl.loginData.email" required placeholder="Email"> </div>
-              <div forminput> <input type="password" name="password" ng-model="loginCtrl.loginData.password" required placeholder="Password"> </div>
+              <div forminput> <input type="email" name="email" ng-pattern=""  ng-model="LoginCtrl.loginData.email" required placeholder="Email"> </div>
+              <div forminput> <input type="password" name="password" ng-model="LoginCtrl.loginData.password" required placeholder="Password"> </div>
               <div > 
+                  
                 <button class="btn" type="submit" ng-disabled="loginForm.$invalid">Login</button> 
                
                 </div>

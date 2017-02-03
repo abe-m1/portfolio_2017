@@ -5,7 +5,7 @@
   function tokenSigningService(tokenService, $log) {
 
       function request(config){
-          if (tokenServcie.retrieve('portfolio_token')){
+          if (tokenService.retrieve('portfolio_token')){
               config.headers['x-portfolio-user-session-key'] = tokenService.retrieve('portfolio_token')
           }
 
@@ -18,4 +18,4 @@
 
   }
   module.factory('tokenSigningService', tokenSigningService);
-}(angular.module("Yobs.Services")));
+}(angular.module("MyPortfolio.Services")));

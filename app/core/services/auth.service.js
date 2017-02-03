@@ -14,10 +14,11 @@
         }
 
         function logIn(data){
+            console.log('data', data)
             // $log.info('auth service : attempting login', urlFactory + '/user/login)
             return $http({
                 method: 'POST',
-                url: urlFactory + '/user',
+                url: urlFactory + '/user/signin',
                 data: data
             })
         }

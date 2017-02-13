@@ -10,13 +10,13 @@
 
           .state('dashboard', {
           url: '/dashboard',
-          controller: 'dashboardCtrl',
+          controller: 'DashboardCtrl',
             views: {
-             "": { templateUrl: 'components/crm/dashboard.html'},
+             "": { templateUrl: 'components/dashboard/dashboard.html'},
 
             // the child views will be defined here (absolutely named)
-            'columnOne@dashboard': { templateUrl: 'components/crm/crm.html' },
-            'columnTwo@dashboard': { templateUrl: 'components/crm/home.html' }             
+            'columnOne@dashboard': { templateUrl: 'components/dashboard/crm.html' },
+            'columnTwo@dashboard': { templateUrl: 'components/dashboard/home.html' }             
             }
         })
 

@@ -2,11 +2,11 @@
 
   "use strict";
   var LoginCtrl;
-  LoginCtrl.$inject = ['authService', 'tokenService', 'TOKEN_HASH' , '$state'];
+  LoginCtrl.$inject = ['authService', 'tokenService', 'TOKEN_HASH' , 'CURRENT_USER', '$state', 'localStorageManager'];
 
 
 
-  function LoginCtrl(authService, tokenService, TOKEN_HASH, $state) {
+  function LoginCtrl(authService, tokenService, TOKEN_HASH, CURRENT_USER, $state, localStorageManager) {
     
    console.log('login running')
 
@@ -21,14 +21,16 @@
     vm.hello = 'hello'
     vm.login = function() {
         console.log('button pressed')
+
+
       
 
       vm.data = { 'email': vm.loginData.email, 'password': vm.loginData.password };
-      console.log('login data', vm.data)
       authService.logIn(vm.data)
         .then(function(data) {
             console.log(data.data.token)
             console.log('here 1')
+            localStorageManager.store(CURRENT_USER, data.data);
 
           tokenService.store(TOKEN_HASH, data.data.token);
         //   return userService.getUser(data.data.token);

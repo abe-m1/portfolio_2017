@@ -10,6 +10,7 @@
 
           .state('dashboard', {
           url: '/dashboard',
+          controller: 'dashboardCtrl',
             views: {
              "": { templateUrl: 'components/crm/dashboard.html'},
 

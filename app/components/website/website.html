@@ -59,6 +59,34 @@
         </div>
       </div>
     </div>
+
+        <div class="wrapper">
+       
+      <div class="flex-container">
+          
+        <div class="box one">
+            
+            <div class="inner1">
+                
+            </div>
+                <div class="inner2">  
+                <!--<h1>hello</h1>-->
+                <!--<img style="width:50%" src="building-l_02.png" alt="">-->
+                
+            </div>
+            
+            
+        </div>
+        <!--<div class="box two"></div>-->
+        <div class="box three">
+            <div class="inner3A">  
+               
+                <!--<img style="width:50%" src="building-l_02.png" alt="">-->
+                
+            </div>
+        </div>
+      </div>
+    </div>
 <style>
 /*HEADER NAVIGATION*/
 /*=========================*/
@@ -381,6 +409,8 @@ header nav li a{
     justify-content: flex-end;   
 }
 
+
+
 .innerA {
     /*width: 100%;*/
     height: 200px;
@@ -389,6 +419,19 @@ header nav li a{
     border: 1px solid black;
     
    background: url('../../assets/images/left-lower-building.png') no-repeat; 
+}
+
+
+  .flex-container{    
+   display: flex;
+   /*background: #fff;*/
+   
+   background-color: url('../../assets/images/background.png') no-repeat center right;
+   
+   background-size: cover;
+    height: 100vh;
+    width: 100%;
+
 }
 
 
@@ -411,6 +454,23 @@ background-size: 250px;
     
 }
 
+.inner3A {
+    width: 100%;
+    height: 100%;
+    border: 1px solid orange;
+    background-image:  url('../../assets/images/Untitled-71_02.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    /*background: cover;*/
+    flex-grow: 1;
+background-size: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+    
+    
+}
 
 
 #container{

@@ -62,14 +62,14 @@
 
         <div class="wrapper">
        
-      <div class="flex-container">
+      <div class="flex-container1">
           
         <div class="box one">
             
-            <div class="inner1">
+            <!--<div class="inner1">
                 
-            </div>
-                <div class="inner2">  
+            </div>-->
+                <div class="inner2A">  
                 <!--<h1>hello</h1>-->
                 <!--<img style="width:50%" src="building-l_02.png" alt="">-->
                 
@@ -349,6 +349,19 @@ header nav li a{
 
 }
 
+
+  .flex-container1{    
+   display: flex;
+   /*background: #fff;*/
+   
+   background-color: #ccc;
+   
+   background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
 .box{
     height: 100vh;
     min-width: 100px;
@@ -470,6 +483,22 @@ background-size: 250px;
     justify-content: flex-end;   
     
     
+}
+
+.inner2A {
+    width: 100%;
+    /*height: 50%;*/
+    border: 1px solid orange;
+    background-image:  url('../../assets/images/window_01.png') ;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    /*background: url('left-lower-building.png') no-repeat left bottom;*/
+    /*background: cover;*/
+    flex-grow: 3;
+    background-size: 900px,450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
 }
 
 

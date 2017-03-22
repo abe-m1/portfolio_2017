@@ -32,7 +32,7 @@
 
 <!--start homepage content-->
 
-    <div class="wrapper">
+       <div class="wrapper">
        
       <div class="flex-container">
           
@@ -53,63 +53,6 @@
         <div class="box three"></div>
       </div>
     </div>
-     <!--<img class="" style="position: absolute; bottom:0; width: 100%" src="../../assets/images/left-lower-building.png" alt="">-->
-     <!--<img class="" style="position: absolute; right:0px;bottom:-700px"src="../../assets/images/right-building.png" alt="">-->
-
-
-<div  style="position: relative;height: 800px">
-    <div id=”container”>
-        <div class="row">
-           
-            <div id="leftb1"></div>  
-            <div id="footer1" ></div>
-            </div>
-           
-        </div>
-       
-        </div>
-</div>
-
-<div id="main-banner">
-    <img src="../../assets/images/conference.png" alt="">
-</div>
-
-<div id="main-banner">
-    <img src="../../assets/images/reception.png" alt="">
-</div>
-
-<div id="main-banner" id="eightPage">
-    <img src="../../assets/images/street.png" alt="">
-</div>
-
-
-
-
-<footer>
-    <div class="wrapper">
-        <ul>
-                    <li>Abe M</li>
-                    <li>Web Dev</li>
-                    <li>Los Angeles</li>
-                    <li>CA</li>
-                </ul>
-                <ul>
-                     <li>Abe M</li>
-                    <li>Web Dev</li>
-                    <li>Los Angeles</li>
-                    <li>CA</li>
-                    
-                </ul>
-                <ul>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a ui-sref="login">login</a></li>
-                </ul>
-    </div>
-</footer>
-
-
 <style>
 /*HEADER NAVIGATION*/
 /*=========================*/
@@ -346,6 +289,109 @@ header nav li a{
     background:url('../../assets/images/window_01.png') no-repeat bottom left;
     background-size:80%;    
 }
+
+
+
+
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+
+  .flex-container{    
+   display: flex;
+   /*background: #fff;*/
+   
+   background: url('../../assets/images/background.png') no-repeat center right;
+   
+   background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.box{
+    height: 100vh;
+    min-width: 100px;
+    /*to grow elements*/
+    /*flex-grow: 1; all boxes growing the same rate*/
+    /*flex-grow: 1;*/
+
+}
+
+.one{
+    /*background: red;*/
+    flex-grow: 3;
+    /*if only one box has flex grow it will take up the */
+    /*remaing space apart from 100px and 100px*/
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.two{
+    background: blue;
+    /*now if make this 2 , it will be double the size of .one*/
+    flex-grow: 1;
+    opacity: .2;
+}
+
+.three{
+    background: green;
+    flex-grow: 1;
+    /*think of flex-grow as columns in bootstrap*/
+    opacity: .2;
+}
+
+
+.inner1 {
+    width: 100%;
+    /*height: 50%;*/
+    border: 1px solid red;
+    /*background: url('building-l_02.png') no-repeat center center;*/
+    background: cover;
+    flex-grow: 1;
+    
+
+    
+    
+}
+.inner2 {
+    width: 100%;
+    /*height: 50%;*/
+    border: 1px solid orange;
+    background-image:  url('../../assets/images/left-lower-building.png'),url('../../assets/images/building-l_02.png') ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom left;
+    /*background: url('left-lower-building.png') no-repeat left bottom;*/
+    /*background: cover;*/
+    flex-grow: 3;
+    background-size: 900px,450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+}
+
+.innerA {
+    /*width: 100%;*/
+    height: 200px;
+    /*height: 50%;*/
+    /*justify-content: center;*/
+    border: 1px solid black;
+    
+   background: url('../../assets/images/left-lower-building.png') no-repeat; 
+}
+
+
+
+
+
+
 
 #container{
 width:250px;

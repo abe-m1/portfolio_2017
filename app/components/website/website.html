@@ -48,7 +48,7 @@
     <div class="flex-container1">
         <div class="box one">
             <div class="inner2A">
-                <!--<img width="70%" src="../assets/images/desk.png" alt="">-->
+                <img width="80%" src="../assets/images/desk.png" alt="">
             </div>
         </div>
         <div class="box three">
@@ -57,7 +57,7 @@
     </div>
 </div>
 
-<div class="wrapper hide">
+<div class="wrapper">
     <div class="flex-container1">
         <div class="box one">
             <div class="inner2B">
@@ -69,6 +69,9 @@
         </div>
     </div>
 </div>
+
+
+
 <div class="wrapper mobile">
     <!--<div class="flex-container1">
         <div class="box one">
@@ -373,6 +376,7 @@ header nav li a{
     border: 1px solid black;
     
    background: url('../../assets/images/left-lower-building.png') no-repeat; 
+
 }
 
 
@@ -381,7 +385,6 @@ header nav li a{
    /*background: #fff;*/
    
    background-color: url('../../assets/images/background.png') no-repeat center right;
-   
    background-size: cover;
     height: 100vh;
     width: 100%;
@@ -432,6 +435,7 @@ background-size: 250px;
     height: 100%;
     border: 1px solid orange;
     background-image:   url('../../assets/images/Untitled-7C.png');
+ 
     background-repeat: no-repeat;
     background-position: top right;
     
@@ -451,13 +455,13 @@ background-size: 250px;
     width: 90%;
     /*height: 50%;*/
     border: 1px solid orange;
-    background-image:  url('../../assets/images/desk.png'), url('../../assets/images/window_01.png') ;
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom left, center right;
+    background-image:   url('../../assets/images/window_01.png') ;
+    background-repeat:  no-repeat;
+    background-position: center right;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     /*background: cover;*/
     flex-grow: 3;
-    background-size: 600px 400px, 900px,300px; 
+    background-size:  900px,300px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;   
@@ -507,6 +511,8 @@ background-size: 250px;
 
 
 
+
+
 /*tablet styles*/
 @media screen and (max-width: 900px){
        .inner3 { 
@@ -547,6 +553,14 @@ background-size: 250px;
             padding: 0;
             text-align: center
         }
+
+       .mobile {
+    display: none;
+}
+
+    .hide {
+        display: block;
+    }
       
     }
 

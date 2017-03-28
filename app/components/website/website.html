@@ -69,6 +69,18 @@
         </div>
     </div>
 </div>
+<div class="wrapper mobile">
+    <!--<div class="flex-container1">
+        <div class="box one">
+            <div class="inner2B">
+               
+            </div>
+        </div>
+        <div class="box three">
+            <div class="inner3B"></div>
+        </div>
+    </div>-->
+</div>
 
 <div class="wrapper">
     <div class="flex-container1">
@@ -484,6 +496,10 @@ background-size: 250px;
     justify-content: flex-end;   
 }
 
+.mobile {
+    display: none;
+}
+
 
 
 
@@ -537,6 +553,11 @@ background-size: 250px;
 @media screen and (max-width: 480px){
         .hide {
             display: none;
+        }
+
+        .mobile {
+            display: block;
+            background-color: blue;
         }
         .burger-nav{
             display: block;

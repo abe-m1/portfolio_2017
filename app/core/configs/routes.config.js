@@ -26,7 +26,7 @@
             controller: 'WebsiteCtrl'
         })
 
-        .state('website', {
+        .state('contact', {
            url: '/contact',
             templateUrl: 'components/website/contact.html',
             

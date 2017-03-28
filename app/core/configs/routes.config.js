@@ -26,6 +26,12 @@
             controller: 'WebsiteCtrl'
         })
 
+        .state('website', {
+           url: '/contact',
+            templateUrl: 'components/website/contact.html',
+            
+        })
+
         .state('login', {
            url: '/login',
             templateUrl: 'components/website/login/login.html',

@@ -48,7 +48,7 @@
     <div class="flex-container1">
         <div class="box one">
             <div class="inner2A">
-                <img width="70%" src="../assets/images/desk.png" alt="">
+                <!--<img width="70%" src="../assets/images/desk.png" alt="">-->
             </div>
         </div>
         <div class="box three">
@@ -315,6 +315,17 @@ header nav li a{
 }
 
 
+.oneA{
+    /*background: red;*/
+    flex-grow: 3;
+    /*if only one box has flex grow it will take up the */
+    /*remaing space apart from 100px and 100px*/
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
 
 .innerA {
     /*width: 100%;*/
@@ -363,7 +374,7 @@ background-size: 250px;
     width: 100%;
     height: 100%;
     border: 1px solid orange;
-    background-image:  url('../../assets/images/Untitled-71_02.png');
+    background-image:   url('../../assets/images/Untitled-71_02.png');
     background-repeat: no-repeat;
     background-position: top right;
     
@@ -378,16 +389,16 @@ background-size: 250px;
 }
 
 .inner2A {
-    width: 100%;
+    width: 90%;
     /*height: 50%;*/
     border: 1px solid orange;
-    background-image:  url('../../assets/images/window_01.png') ;
-    background-repeat: no-repeat;
-    background-position: center right;
+    background-image:  url('../../assets/images/desk.png'), url('../../assets/images/window_01.png') ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, center right;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     /*background: cover;*/
     flex-grow: 3;
-    background-size: 900px,300px; 
+    background-size: 600px 400px, 900px,300px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;   

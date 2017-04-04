@@ -345,8 +345,7 @@ header nav li a{
     background-image:  url('../../assets/images/left-lower-building.png'),url('../../assets/images/building-l_02.png') ;
     background-repeat: no-repeat, no-repeat;
     background-position: bottom left, bottom left;
-    /*background: url('left-lower-building.png') no-repeat left bottom;*/
-    /*background: cover;*/
+    
     flex-grow: 3;
     background-size: 1200px,450px; 
     display: flex;
@@ -528,6 +527,23 @@ header nav li a{
            width: 80%;
        }
 
+       .inner2 {
+    width: 100%;
+    /*height: 50%;*/
+    border: 1px solid orange;
+    background-image:  url('../../assets/images/left-lower-building.png'),url('../../assets/images/building-l_02.png') ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom left;
+    
+    flex-grow: 3;
+    background-size: 1400px,450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+}
+
+
+
         header nav{
             float: none;
             clear: left;
@@ -562,6 +578,11 @@ header nav li a{
       
     }
 
+
+@media screen and (max-width: 915px){
+
+}
+
 @media screen and (max-width: 480px){
     .flex-container1{    
    display: block;
@@ -584,11 +605,11 @@ header nav li a{
     }
 
     .one {
-        display: none;
+        display: block;
     }
 
     .inner1 {
-        display: none;
+        display: block;
     }
 
     .inner2{

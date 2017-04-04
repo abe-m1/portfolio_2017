@@ -32,9 +32,9 @@
 
 <!--start homepage content-->
 <div class="wrapper">
-    <div class="flex-container">
+    <div class="cityscape">
         <div class="box one">
-            <div class="inner1"></div>
+            <!--<div class="inner1"></div>-->
             <div class="inner2"></div>
         </div>
       
@@ -48,7 +48,7 @@
     <div class="flex-container1">
         <div class="box one">
             <div class="inner2A">
-                <img width="80%" src="../assets/images/desk.png" alt="">
+                <img  src="../assets/images/desk.png" alt="">
             </div>
         </div>
         <div class="box three">
@@ -277,10 +277,10 @@ header nav li a{
     height: 100vh;
 }
 
-.flex-container{    
+.cityscape{    
     display: flex;
     /*background: #fff;*/
-    background: url('../../assets/images/background.png') no-repeat center right fixed;
+    background: url('../../assets/images/background.png') no-repeat center right ;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -289,7 +289,7 @@ header nav li a{
 .flex-container1{    
    display: flex;
    /*background: #fff;*/
-   background-color: #ccc;
+   /*background-color: #ccc;*/
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -408,12 +408,13 @@ header nav li a{
     background-image:   url('../../assets/images/Untitled-71_02.png');
     background-repeat: no-repeat;
     background-position: top right;
-    /*background: cover;*/
+    background: cover;
     flex-grow: 1;
-    background-size: 250px;
+    background-size: 250px 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;       
+    justify-content: flex-end; 
+    /*min-width: 250px;      */
 }
 
 
@@ -426,7 +427,7 @@ header nav li a{
     background-position: top right;
     /*background: cover;*/
     flex-grow: 1;
-    background-size: 250px;
+    background-size: 250px 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;   
@@ -440,7 +441,7 @@ header nav li a{
     border: 1px solid orange;
     background-image:   url('../../assets/images/window_01.png') ;
     background-repeat:  no-repeat;
-    background-position: center right;
+    background-position: center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     /*background: cover;*/
     flex-grow: 3;
@@ -473,7 +474,7 @@ header nav li a{
     border: 1px solid orange;
     background-image:   url('../../assets/images/recep.png') ;
     background-repeat:  no-repeat;
-    background-position: center right;
+    background-position: center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     /*background: cover;*/
     flex-grow: 3;
@@ -498,6 +499,10 @@ header nav li a{
     width: 100%;
 }
 
+.inner2A img {
+    width: 80%;
+}
+
 
 
 
@@ -520,7 +525,7 @@ header nav li a{
        }
 
        .inner2A img {
-           width: 100%;
+           width: 80%;
        }
 
         header nav{
@@ -558,6 +563,46 @@ header nav li a{
     }
 
 @media screen and (max-width: 480px){
+    .flex-container1{    
+   display: block;
+   background: url('../../assets/images/mobile2.png') no-repeat center right;
+    }
+
+    .flex-container{
+        display: block;
+    }
+    .cityscape{    
+    display: block;
+    /*background: #fff;*/
+    background: url('../../assets/images/mobile1.png') no-repeat center right;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+    .box{
+        display:none;
+    }
+
+    .one {
+        display: none;
+    }
+
+    .inner1 {
+        display: none;
+    }
+
+    .inner2{
+        display: none;
+    }
+           
+    .three {
+        display: none;
+
+    }
+    .inner3{
+        display: none;
+    }
+   
         .hide {
             display: none;
         }

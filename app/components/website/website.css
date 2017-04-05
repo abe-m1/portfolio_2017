@@ -179,7 +179,7 @@ header nav li a{
    display: flex;
    /*background: #fff;*/
    /*background-color: #ccc;*/
-   background: url('../../assets/images/bg-3.png') no-repeat center right ;
+   background: url('../../assets/images/2bg.png') no-repeat center right ;
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -204,6 +204,15 @@ header nav li a{
    background-size: cover;
    height: 100vh;
    width: 100%;
+}
+
+.flex-container5{    
+   display: flex;   
+   background: url('../../assets/images/bg4.png') no-repeat top right;
+   /*background-size:  450px,300px; */
+   background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .box{
@@ -315,7 +324,7 @@ header nav li a{
     width: 100%;
     height: 100%;
     /*border: 1px solid orange;*/
-    background-image:   url('../../assets/images/Untitled-71_02.png');
+    background-image:   url('../../assets/images/code_02.png');
     background-repeat: no-repeat;
     background-position: top right;
     background: cover;
@@ -332,7 +341,7 @@ header nav li a{
     width: 100%;
     height: 100%;
     /*border: 1px solid blue;*/
-    background-image:   url('../../assets/images/side-bldg_02.png');
+    background-image:   url('../../assets/images/side-build_02.png');
      background-repeat: no-repeat;
     background-position: top right;
     /*background: cover;*/
@@ -383,13 +392,13 @@ header nav li a{
     width: 85%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
-    background-image:   url('../../assets/images/rec1_01.png') ;
-    background-repeat:  no-repeat;
-    background-position: center left;
+    background-image:   url('../../assets/images/desk_02.png'), url('../../assets/images/desk_03.png'), url('../../assets/images/rec1_01.png') ;
+    background-repeat:  no-repeat,no-repeat, no-repeat;
+    background-position: bottom left, bottom right, center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     /*background: cover;*/
     flex-grow: 2;
-    background-size:  100% 100%; 
+    background-size:  50% 50%, 50% 50% , 100% 100%; 
     display: flex;
     flex-direction: row;
     justify-content: center;   
@@ -419,14 +428,7 @@ header nav li a{
     display: none;
 }
 
-.flex-container5{    
-   display: flex;   
-   background: url('../../assets/images/bg4.png') no-repeat top left;
-   /*background-size:  450px,300px; */
-   background-size: cover;
-    height: 100vh;
-    width: 100%;
-}
+
 
 .inner2A img {
     width: 80%;
@@ -444,6 +446,9 @@ header nav li a{
         width: 90%;
     }
     .inner4A {
+        width: 90%;
+    }
+    .inner5A {
         width: 90%;
     }
 }
@@ -516,6 +521,15 @@ header nav li a{
     }
     .inner4A {
         width: 100%;
+    }
+    .inner5A {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .inner3A {
+        background-image:   url('../../assets/images/mid-conf_01.png') ;
     }
 }
 

@@ -200,7 +200,7 @@ header nav li a{
    display: flex;
    /*background: #fff;*/
    /*background-color: #ccc;*/
-   background: url('../../assets/images/test-bg4.png') no-repeat center right ;
+   background: url('../../assets/images/bgA.png') no-repeat bottom right ;
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -243,7 +243,7 @@ header nav li a{
 .inner1 {
     width: 100%;
     /*height: 50%;*/
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /*background: url('building-l_02.png') no-repeat center center;*/
     background: cover;
     flex-grow: 1;
@@ -252,7 +252,7 @@ header nav li a{
 .inner1A {
     width: 100%;
     /*height: 50%;*/
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     background-image:  url('../../assets/images/left-lower-building.png'),url('../../assets/images/building-l_02.png') ;
     background-repeat: no-repeat, no-repeat;
     background-position: bottom left, bottom left;
@@ -280,7 +280,7 @@ header nav li a{
     height: 200px;
     /*height: 50%;*/
     /*justify-content: center;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     background: url('../../assets/images/left-lower-building.png') no-repeat; 
 }
 
@@ -299,7 +299,7 @@ header nav li a{
 .inner1B {
     width: 100%;
     height: 100%;
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     background-image:  url('../../assets/images/Untitled-7_03.png');
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -314,7 +314,7 @@ header nav li a{
 .inner2B {
     width: 100%;
     height: 100%;
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     background-image:   url('../../assets/images/Untitled-71_02.png');
     background-repeat: no-repeat;
     background-position: top right;
@@ -331,7 +331,7 @@ header nav li a{
 .inner3B {
     width: 100%;
     height: 100%;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     background-image:   url('../../assets/images/side-bldg_02.png');
      background-repeat: no-repeat;
     background-position: top right;
@@ -348,7 +348,7 @@ header nav li a{
 .inner2A {
     width: 85%;
     /*height: 50%;*/
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     background-image:   url('../../assets/images/window_01.png') ;
     background-repeat:  no-repeat;
     background-color: white;
@@ -365,7 +365,7 @@ header nav li a{
 .inner3A {
     width: 85%;
     /*height: 50%;*/
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     background-image:   url('../../assets/images/conf.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
@@ -382,18 +382,18 @@ header nav li a{
 .inner4A {
     width: 85%;
     /*height: 50%;*/
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     background-image:   url('../../assets/images/rec1_01.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     /*background: cover;*/
-    flex-grow: 3;
+    flex-grow: 2;
     background-size:  100% 100%; 
     display: flex;
     flex-direction: row;
     justify-content: center;   
-    align-content: center;
+    align-items: center;
     
 }
 
@@ -402,8 +402,8 @@ header nav li a{
 .inner5A {
     width: 90%;
     /*height: 50%;*/
-    border: 1px solid orange;
-    background-image:   url('../../assets/images/theatre.png') ;
+    /*border: 1px solid orange;*/
+    background-image:   url('../../assets/images/cinema1_01.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
@@ -421,7 +421,7 @@ header nav li a{
 
 .flex-container5{    
    display: flex;   
-   background: url('../../assets/images/test_background5.png') no-repeat bottom left;
+   background: url('../../assets/images/bg4.png') no-repeat top left;
    /*background-size:  450px,300px; */
    background-size: cover;
     height: 100vh;

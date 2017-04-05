@@ -364,6 +364,9 @@ img {
     width: 85%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
+    border-right: 45px solid lightsalmon;
+    border-bottom: 45px solid lightsalmon;
+    border-top: 20px solid lightsalmon;
     background-image:   url('../../assets/images/window_01.png') ;
     background-repeat:  no-repeat;
     background-color: white;
@@ -381,6 +384,9 @@ img {
     width: 85%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
+    border-right: 45px solid cadetblue;
+    border-bottom: 45px solid cadetblue;
+    border-top: 20px solid cadetblue;
     background-image:   url('../../assets/images/conf.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
@@ -400,6 +406,7 @@ img {
     /*border: 1px solid orange;*/
     border-right: 45px solid orange;
     border-bottom: 45px solid orange;
+    border-top: 20px solid orange;
     background-image:   url('../../assets/images/desk_02.png'), url('../../assets/images/desk_03.png'), url('../../assets/images/rec1_01.png') ;
     background-repeat:  no-repeat,no-repeat, no-repeat;
     background-position: bottom left, bottom right, center left;

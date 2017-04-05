@@ -546,7 +546,7 @@ header nav li a{
     }
     .cityscape{    
         display: block;
-        background: url('../../assets/images/mobile1.png') no-repeat center right;
+        background: url('../../assets/images/small-bg.png') no-repeat center right;
         background-size: cover;
         height: 100vh;
         width: 100%;

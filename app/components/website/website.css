@@ -562,20 +562,31 @@ img {
 
 /*MEDIA QUERIES 480*/
 @media screen and (max-width: 480px){
-    .flex-container1{    
-   display: block;
-   background: url('../../assets/images/mobile2.png') no-repeat center right;
-   width: 100%;
-    }
+    
 
-    .flex-container{
+    /*.flex-container{
         display: block;
-    }
+    }*/
     .cityscape{    
         display: block;
         background: url('../../assets/images/small-bg.png') no-repeat center right;
         background-size: cover;
         height: 100vh;
+        width: 100%;
+    }
+
+    .flex-container1{    
+        display: block;
+        background: url('../../assets/images/mobile2.png') no-repeat center right;
+        width: 100%;
+        width: 100%;
+    }
+
+
+    .flex-container3{    
+        display: block;
+        background: url('../../assets/images/mobile2.png') no-repeat center right;
+        width: 100%;
         width: 100%;
     }
     .box{
@@ -599,6 +610,14 @@ img {
 
     }
     .inner1B{
+        display: none;
+    }
+
+    .inner2A {
+        display: none;
+    }
+
+    .inner4A {
         display: none;
     }
    

@@ -399,6 +399,7 @@ img {
     /*height: 50%;*/
     /*border: 1px solid orange;*/
     border-right: 45px solid orange;
+    border-bottom: 45px solid orange;
     background-image:   url('../../assets/images/desk_02.png'), url('../../assets/images/desk_03.png'), url('../../assets/images/rec1_01.png') ;
     background-repeat:  no-repeat,no-repeat, no-repeat;
     background-position: bottom left, bottom right, center left;
@@ -526,12 +527,27 @@ img {
     .inner3A {
         width: 100%;
     }
-    .inner4A {
-        width: 100%;
-    }
+   
     .inner5A {
         width: 100%;
     }
+
+    .inner4A {
+    width: 100%;
+   
+    background-image:   url('../../assets/images/desk_02.png'),  url('../../assets/images/rec1_01.png') ;
+    background-repeat:  no-repeat, no-repeat;
+    background-position: bottom center, center left;
+    /*background: url('left-lower-building.png') no-repeat left bottom;*/
+    background: cover;
+    flex-grow: 2;
+    background-size:  70% 60% , 100% 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    align-items: center;
+    
+}
 }
 
 @media screen and (max-width: 800px){

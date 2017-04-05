@@ -159,6 +159,12 @@ header nav li a{
 }
 
 /*CONTENT STYLES*/
+
+img {
+    width: 70%;
+    height: 70%;
+}
+
 .wrapper{
     width: 100%;
     /*max-width: 960px;*/
@@ -392,13 +398,14 @@ header nav li a{
     width: 85%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
+    border-right: 45px solid orange;
     background-image:   url('../../assets/images/desk_02.png'), url('../../assets/images/desk_03.png'), url('../../assets/images/rec1_01.png') ;
     background-repeat:  no-repeat,no-repeat, no-repeat;
     background-position: bottom left, bottom right, center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
-    /*background: cover;*/
+    background: cover;
     flex-grow: 2;
-    background-size:  50% 50%, 50% 50% , 100% 100%; 
+    background-size:  45% 40%, 45% 40% , 100% 100%; 
     display: flex;
     flex-direction: row;
     justify-content: center;   
@@ -429,10 +436,10 @@ header nav li a{
 }
 
 
-
+/*
 .inner2A img {
     width: 80%;
-}
+}*/
 
 
 /*START OF MEDIA QUERIES*/
@@ -530,6 +537,10 @@ header nav li a{
 @media screen and (max-width: 800px){
     .inner3A {
         background-image:   url('../../assets/images/mid-conf_01.png') ;
+    }
+
+    img {
+        width: 90%;
     }
 }
 

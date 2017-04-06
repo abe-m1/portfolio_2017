@@ -206,7 +206,7 @@ img {
    display: flex;
    /*background: #fff;*/
    /*background-color: #ccc;*/
-   background: url('../../assets/images/bgA.png') no-repeat bottom right ;
+   background: url('../../assets/images/back4b.png') no-repeat bottom right ;
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -330,7 +330,7 @@ img {
     width: 100%;
     height: 100%;
     /*border: 1px solid orange;*/
-    background-image:   url('../../assets/images/code_02.png');
+    background-image:   url('../../assets/images/signage_02.png');
     background-repeat: no-repeat;
     background-position: top right;
     background: cover;
@@ -427,7 +427,7 @@ img {
     width: 100%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
-    background-image:   url('../../assets/images/cinema1_01.png') ;
+    background-image:   url('../../assets/images/cinema4_01.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/

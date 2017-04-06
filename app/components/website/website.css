@@ -413,7 +413,7 @@ img {
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     background: cover;
     flex-grow: 2;
-    background-size:  45% 20%, 45% 40% , 100% 100%; 
+    background-size:  45% 20%, 40% 40% , 100% 100%; 
     display: flex;
     flex-direction: row;
     justify-content: center;   
@@ -424,7 +424,7 @@ img {
 
 
 .inner5A {
-    width: 90%;
+    width: 100%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
     background-image:   url('../../assets/images/cinema1_01.png') ;
@@ -438,6 +438,22 @@ img {
     flex-direction: column;
     justify-content: flex-end;   
 }
+
+.inner5B {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    background-image:   url('../../assets/images/crowd1_03.png');
+     background-repeat: no-repeat;
+    background-position: bottom right;
+    /*background: cover;*/
+    flex-grow: 1;
+    background-size: 100% 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+}
+
 
 .mobile {
     display: none;
@@ -464,7 +480,7 @@ img {
         width: 90%;
     }
     .inner5A {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -586,7 +602,7 @@ img {
 
     .flex-container1{    
         display: block;
-        background: url('../../assets/images/mobile2.png') no-repeat center right;
+        background: url('../../assets/images/sml-desk.png') no-repeat bottom right;
         background-size: cover;
         width: 100%;
         width: 100%;
@@ -595,7 +611,7 @@ img {
 
     .flex-container3{    
         display: block;
-        background: url('../../assets/images/mobile2.png') no-repeat center right;
+        background: url('../../assets/images/sml-conf.png') no-repeat center right;
         background-size: cover;
         width: 100%;
         width: 100%;

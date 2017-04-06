@@ -387,7 +387,7 @@ img {
     border-right: 45px solid cadetblue;
     border-bottom: 45px solid cadetblue;
     border-top: 20px solid cadetblue;
-    background-image:   url('../../assets/images/conf.png') ;
+    background-image:   url('../../assets/images/conf-pattern_01.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
@@ -407,13 +407,13 @@ img {
     border-right: 45px solid orange;
     border-bottom: 45px solid orange;
     border-top: 20px solid orange;
-    background-image:   url('../../assets/images/desk_02.png'), url('../../assets/images/desk_03.png'), url('../../assets/images/rec1_01.png') ;
+    background-image:   url('../../assets/images/couch.png'), url('../../assets/images/girl.png'), url('../../assets/images/dot.png') ;
     background-repeat:  no-repeat,no-repeat, no-repeat;
     background-position: bottom left, bottom right, center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     background: cover;
     flex-grow: 2;
-    background-size:  45% 40%, 45% 40% , 100% 100%; 
+    background-size:  45% 20%, 45% 40% , 100% 100%; 
     display: flex;
     flex-direction: row;
     justify-content: center;   
@@ -542,13 +542,13 @@ img {
     .inner4A {
     width: 100%;
    
-    background-image:   url('../../assets/images/desk_02.png'),  url('../../assets/images/rec1_01.png') ;
+    background-image:   url('../../assets/images/couch.png'),  url('../../assets/images/dot.png') ;
     background-repeat:  no-repeat, no-repeat;
     background-position: bottom center, center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
     background: cover;
     flex-grow: 2;
-    background-size:  70% 60% , 100% 100%; 
+    background-size:  70% 30% , 100% 100%; 
     display: flex;
     flex-direction: row;
     justify-content: center;   
@@ -559,7 +559,7 @@ img {
 
 @media screen and (max-width: 800px){
     .inner3A {
-        background-image:   url('../../assets/images/mid-conf_01.png') ;
+        background-image:   url('../../assets/images/conf-flower-small_01.png') ;
     }
 
     img {

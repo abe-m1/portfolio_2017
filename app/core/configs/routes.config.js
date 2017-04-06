@@ -32,6 +32,12 @@
             
         })
 
+        .state('recent', {
+           url: '/recent',
+            templateUrl: 'components/website/recent.html',
+            
+        })
+
         .state('login', {
            url: '/login',
             templateUrl: 'components/website/login/login.html',

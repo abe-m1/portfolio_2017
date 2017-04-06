@@ -185,7 +185,7 @@ img {
    display: flex;
    /*background: #fff;*/
    /*background-color: #ccc;*/
-   background: url('../../assets/images/2bg.png') no-repeat center right ;
+   background: url('../../assets/images/bg-three.png') no-repeat center right ;
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -196,7 +196,7 @@ img {
    display: flex;
    /*background: #fff;*/
    /*background-color: #ccc;*/
-   background: url('../../assets/images/test-bg3.png') no-repeat bottom right ;
+   background: url('../../assets/images/bg-four.png') no-repeat bottom right ;
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -206,7 +206,7 @@ img {
    display: flex;
    /*background: #fff;*/
    /*background-color: #ccc;*/
-   background: url('../../assets/images/back4b.png') no-repeat bottom right ;
+   background: url('../../assets/images/bg-five.png') no-repeat bottom right ;
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -364,9 +364,12 @@ img {
     width: 85%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
-    border-right: 45px solid lightsalmon;
+    /*border-right: 45px solid lightsalmon;
     border-bottom: 45px solid lightsalmon;
-    border-top: 20px solid lightsalmon;
+    border-top: 20px solid lightsalmon;*/
+    border-right: 45px solid grey;
+    border-bottom: 45px solid grey;
+    border-top: 20px solid grey;
     background-image:   url('../../assets/images/panes_01.png') ;
     background-repeat:  no-repeat;
     background-color: white;
@@ -384,9 +387,12 @@ img {
     width: 85%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
-    border-right: 45px solid cadetblue;
+    /*border-right: 45px solid cadetblue;
     border-bottom: 45px solid cadetblue;
-    border-top: 20px solid cadetblue;
+    border-top: 20px solid cadetblue;*/
+    border-right: 45px solid grey;
+    border-bottom: 45px solid grey;
+    border-top: 20px solid grey;
     background-image:   url('../../assets/images/conf-pattern_01.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
@@ -404,9 +410,12 @@ img {
     width: 85%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
-    border-right: 45px solid orange;
+    /*border-right: 45px solid orange;
     border-bottom: 45px solid orange;
-    border-top: 20px solid orange;
+    border-top: 20px solid orange;*/
+    border-right: 45px solid grey;
+    border-bottom: 45px solid grey;
+    border-top: 20px solid grey;
     background-image:   url('../../assets/images/couch.png'), url('../../assets/images/girl.png'), url('../../assets/images/dot.png') ;
     background-repeat:  no-repeat,no-repeat, no-repeat;
     background-position: bottom left, bottom right, center left;

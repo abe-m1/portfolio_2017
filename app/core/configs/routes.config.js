@@ -38,6 +38,12 @@
             
         })
 
+        .state('skills', {
+           url: '/skills',
+            templateUrl: 'components/website/skills.html',
+            
+        })
+
         .state('login', {
            url: '/login',
             templateUrl: 'components/website/login/login.html',

@@ -1,3 +1,50 @@
 <h1>this is the contact page</h1>
 
+ <div class="contact">
+  <div class="container">
+    <div class="content">
+      <div class="contact--form">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="title">
+              <h1>Let us know what you thing</h1>
+              <h3>we will get in touch with you as soon as possible</h3>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+           
+            <form >
+              <h3>Get in touch today</h3>
+
+           
+
+              <div class="form-group row"> 
+                   <div class="col-10">
+                       <input class="form-control" type="text" name="contactName"  required placeholder="Contact Name">
+                    </div> 
+              </div>
+
+              <div class="form-group row"> 
+                   <div class="col-10">
+                       <input class="form-control" type="email" name="contactEmail"  ng-pattern="/^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.edu)/"  required placeholder="Email" ng-model-options="{ updateOn: 'blur' }">
+                    </div> 
+              </div>
+
+              <div class="form-group row"> 
+                   <div class="col-10">
+                      <input class="form-control" type="text" name="contactMessage" required placeholder="Message">
+                    </div> 
+              </div>
+               
+        
+              <div class="contact--form__button">
+                <button class="btn" type="submit" ng-disabled="contactForm.$invalid">Send A Message</button>
+                
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
  <a ui-sref="website"><i class="fa fa-fw fa-file"></i> back to home</a>

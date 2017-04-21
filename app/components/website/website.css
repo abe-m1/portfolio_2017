@@ -662,6 +662,7 @@ img {
      .innerSmall {
         width: 100%;
         height: 100vh;
+        margin-top: 10%;
         
     
         /*background-image:   url('../../assets/images/desk_02.png'),  url('../../assets/images/rec1_01.png') ;*/

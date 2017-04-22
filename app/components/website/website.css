@@ -673,8 +673,9 @@ img {
         background-size:  70% 60% , 100% 100%; */
         display: flex;
         flex-direction: column;
-        justify-content: space-around;  
-        align-items: center;   
+        justify-content: center;  
+        align-items: center;  
+        text-align: center 
     }
    
     .hide {

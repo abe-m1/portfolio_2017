@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
 /*HEADER NAVIGATION*/
@@ -472,12 +473,18 @@ img {
     display: none;
 }
 
-.contact {
+.yellow-tail {
     font-family: 'Yellowtail', cursive;
     font-size: 28px;
     color: white;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.frameworks {
+    font-family: 'Open Sans', sans-serif;font-family: 'Open Sans', sans-serif;
+    font-size: 38px;
+    color: white;
 }
 
 

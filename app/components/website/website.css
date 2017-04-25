@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
 
 /*HEADER NAVIGATION*/
 /*=========================*/
@@ -468,6 +470,14 @@ img {
 
 .mobile {
     display: none;
+}
+
+.contact {
+    font-family: 'Yellowtail', cursive;
+    font-size: 28px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 

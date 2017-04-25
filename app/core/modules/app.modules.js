@@ -8,7 +8,8 @@
       'MyPortfolio.Directives',
       'MyPortfolio.Constants',
       'MyPortfolio.Filters',
-      'ui.router'
+      'ui.router',
+      'ui.bootstrap'
     ])
 
   .run(function($rootScope) {

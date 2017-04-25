@@ -41,6 +41,8 @@
         .state('skills', {
            url: '/skills',
             templateUrl: 'components/website/skills.html',
+            controller: 'WebsiteCtrl',
+            controllerAs: 'websiteCtrl'
             
         })
 

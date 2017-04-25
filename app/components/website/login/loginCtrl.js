@@ -4,8 +4,6 @@
   var LoginCtrl;
   LoginCtrl.$inject = ['authService', 'tokenService', 'TOKEN_HASH' , 'CURRENT_USER', '$state', 'localStorageManager'];
 
-
-
   function LoginCtrl(authService, tokenService, TOKEN_HASH, CURRENT_USER, $state, localStorageManager) {
     
    console.log('login running')
@@ -15,15 +13,12 @@
       email: '',
       password: ''
     }
-
     
     vm.error = ""
     vm.hello = 'hello'
     vm.login = function() {
         console.log('button pressed')
-
-
-      
+   
 
       vm.data = { 'email': vm.loginData.email, 'password': vm.loginData.password };
       authService.logIn(vm.data)
@@ -45,7 +40,7 @@
           
         })
     }
-  
+
 
   }
 

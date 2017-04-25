@@ -14,10 +14,10 @@
     var vm = this;
     console.log('i am hooked up')
   
-     vm.myInterval = 3000;
+     vm.myInterval = 5000;
   vm.slides = [
     {
-      image: 'http://lorempixel.com/400/200/'
+      image: '../../assets/images/green_screen.png'
     },
     {
       image: 'http://lorempixel.com/400/200/food'

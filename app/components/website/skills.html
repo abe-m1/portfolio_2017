@@ -14,7 +14,7 @@
         <slide ng-repeat="slide in websiteCtrl.slides" active="slide.active">
           <img ng-src="{{slide.image}}">
           <div class="carousel-caption">
-            <h4>Slide {{$index+1}}</h4>
+            <!--<h4>Slide {{$index+1}}</h4>-->
           </div>
         </slide>
       </carousel>
@@ -37,8 +37,23 @@
 
 
 <style>
+    .right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+
+ol.carousel-indicators {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
     .test{
+        
+        
+        background-image:  url('../../assets/images/seats.png');
+        background-position: bottom center;
+        background-repeat: no-repeat;
         background-color:black;
+        background-size: cover;
         height: 100vh;
     }
 

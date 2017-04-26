@@ -324,7 +324,7 @@ img {
     width: 100%;
     height: 100%;
     /*border: 1px solid orange;*/
-    background-image:  url('../../assets/images/Untitled-7_03.png');
+    background-image:  url('../../assets/images/z-cornice.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     /*background: cover;*/
@@ -339,7 +339,7 @@ img {
     width: 100%;
     height: 100%;
     /*border: 1px solid orange;*/
-    background-image:   url('../../assets/images/signage_02.png');
+    background-image:   url('../../assets/images/z-code.png');
     background-repeat: no-repeat;
     background-position: top right;
     background: cover;
@@ -356,7 +356,7 @@ img {
     width: 100%;
     height: 100%;
     /*border: 1px solid blue;*/
-    background-image:   url('../../assets/images/side-build_02.png');
+    background-image:   url('../../assets/images/z-brick.png');
      background-repeat: no-repeat;
     background-position: top right;
     /*background: cover;*/

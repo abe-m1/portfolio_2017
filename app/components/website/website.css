@@ -194,7 +194,7 @@ img {
    display: flex;
    /*background: #fff;*/
    /*background-color: #ccc;*/
-   background: url('../../assets/images/bg-three.png') no-repeat center right ;
+   background: url('../../assets/images/z-bg2.png') no-repeat center right ;
    background-size: cover;
    height: 100vh;
    width: 100%;
@@ -446,7 +446,7 @@ img {
     width: 100%;
     /*height: 50%;*/
     /*border: 1px solid orange;*/
-    background-image:   url('../../assets/images/cinema4_01.png') ;
+    background-image:   url('../../assets/images/z-cinema.png') ;
     background-repeat:  no-repeat;
     background-position: center left;
     /*background: url('left-lower-building.png') no-repeat left bottom;*/
@@ -462,7 +462,7 @@ img {
     width: 100%;
     height: 100%;
     /*border: 1px solid blue;*/
-    background-image:   url('../../assets/images/crowd1_03.png'), url('../../assets/images/bottom-right_02.png');
+    background-image:   url('../../assets/images/z-crowd.png'), url('../../assets/images/bottom-right_02.png');
      background-repeat: no-repeat, no-repeat;
     background-position: bottom right, top right;
     /*background: cover;*/

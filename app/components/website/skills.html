@@ -22,20 +22,6 @@
   </div>
 </div>  
 
-
-
-
-
-
-  
-
-
- 
-
-
-
-
-
 <style>
     .right.carousel-control, .left.carousel-control {
     opacity: 0;
@@ -46,14 +32,21 @@ ol.carousel-indicators {
     opacity: 0;
     filter:alpha(opacity=0); /* IE support */
 }
-    .test{
-        
-        
+    /*.test{    
         background-image:  url('../../assets/images/seats.png');
         background-position: bottom center;
         background-repeat: no-repeat;
         background-color:black;
         background-size: cover;
+        height: 100vh;
+    }*/
+
+     .test{    
+        background-image:  url('../../assets/images/seats.png'), url('../../assets/images/m-theatre.png');
+        background-position: bottom center, center center;
+        background-repeat: no-repeat, no-repeat;
+        background-color:black;
+        background-size: 100% ;
         height: 100vh;
     }
 
@@ -67,8 +60,13 @@ img{
 #slides_control {
   position:absolute;
   width: 800px;
-  left:40%;
-  top:10%;
- margin-left:-200px;
+  /*left:40%;
+  top:15%;
+ margin-left:-200px;*/
+ margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top:13%;
 }
 </style>

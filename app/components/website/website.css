@@ -74,6 +74,10 @@ header .navbar-brand span.subhead {
 
 /*NAVBAR TOGGLE*/
 /*==============================*/
+.toggle {
+    display: none;
+}
+
 header .navbar-toggle {
   background-color: #666666
 }
@@ -193,7 +197,7 @@ img {
 .cityscape{    
     display: flex;
     /*background: #fff;*/
-    background: url('../../assets/images/z-city-back.png') no-repeat center right ;
+    background: url('../../assets/images/z-city-back1.png') no-repeat center right ;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -489,6 +493,10 @@ img {
     display: none;
 }
 
+.mobile-desk {
+    display:none;
+}
+
 .yellow-tail {
     font-family: 'Yellowtail', cursive;
     font-size: 28px;
@@ -692,6 +700,10 @@ img {
         display: none;
     }
 
+     .inner3A {
+        display: none;
+    }
+
     .inner4A {
         display: none;
     }
@@ -782,4 +794,14 @@ img {
     #p5{
         display: none;
     }
+
+    .mobile-desk {
+        display: block;
+        padding-top: 30%;
+        margin-top: 0px;
+        text-align: center;
+        color: #88CEEF;
+    }
+
+
 }

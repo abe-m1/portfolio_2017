@@ -11,8 +11,8 @@
       </div> <!-- navbar-header -->
 
       <div class="collapse navbar-collapse" id="collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a smooth-scroll target="p1" offset="0" >Home</a></li>
+        <ul class="nav navbar-nav navbar-right" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+        <li class="active" ><a smooth-scroll target="p1" offset="0" >Home</a></li>
         <li><a smooth-scroll target="p2" offset="0" >About Me</a></li>
         <li><a smooth-scroll target="p3" offset="0">Skills</a></li>
         <li><a smooth-scroll target="p4" offset="0">Projects</a></li>
@@ -38,8 +38,10 @@
 
 <div class="wrapper" id="p2">
     <div class="flex-container1">
+        <h3 class="mobile-desk"> I like to work hard and code and design nice things ...</h3>
         <div class="box one">
             <div class="inner2A">
+                
                 <img   src="../assets/images/z-new-desk.png" alt="">
                 <img  class="img2" src="../assets/images/z-file.png" alt="">
             </div>
@@ -50,7 +52,7 @@
     </div>
 </div>
 
-<div class="wrapper mobile" id="p">
+<div class="wrapper mobile" id="p3">
      <div  class="innerSmall">
          <p class="frameworks" >Frameworks</p>
          <div style="width: 100px; margin-top: 70px">
@@ -70,6 +72,7 @@
 
 <div class="wrapper" id="p3">
     <div class="flex-container3">
+        <h3 class="mobile-desk"> I like to work hard and code and design nice things ...</h3>
         <div class="box one">
             <div class="inner3A"></div>
         </div>
@@ -98,6 +101,7 @@
 
 <div class="wrapper" id="p4">
     <div class="flex-container4">
+        <h3 class="mobile-desk"> I like to work hard and code and design nice things ...</h3>
         <div class="box one">
             <div class="inner4A">
                 <div>
@@ -127,6 +131,23 @@
         </div>
     </div>
 </div>
+
+<script>
+        $(document).ready(function(){
+  console.log('ready')
+        })
+// $("#collapse-1 ul li a").click(function () {
+//   $(this).toggleClass("active");
+//  console.log('clicled')
+// $("div.right").toggleClass("test");
+// });
+
+// $(".link").click(function () {
+//   $(this).toggleClass("active");
+// console.log('clicled')
+// $("div.right").toggleClass("test");
+// });
+    </script>
 
 
 

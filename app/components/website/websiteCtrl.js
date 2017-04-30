@@ -29,6 +29,24 @@
       image: 'http://lorempixel.com/400/200/people'
     }
   ];
+
+ 
+  $(document).ready(function(){
+   $('.slider').slick({
+    dots: true,
+  infinite: true,
+  speed: 50,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  fade: true,
+  cssEase: 'linear',
+  arrows: true,
+  adaptiveHeight: true
+});
+console.log('hello there')
+});
+
   }
 
 

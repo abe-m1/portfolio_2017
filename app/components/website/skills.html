@@ -12,18 +12,43 @@
          <img src="../../assets/images/seats.png" alt="">
      </div>
   <div  id="slides_control">
-    <div>
+    <!--<div>
       <carousel interval="websiteCtrl.myInterval">
         <slide ng-repeat="slide in websiteCtrl.slides" active="slide.active">
           <img ng-src="{{slide.image}}">
           <div class="carousel-caption">
-            <!--<h4>Slide {{$index+1}}</h4>-->
+           
           </div>
         </slide>
       </carousel>
-    </div>
+    </div>-->
+
+    <div class="slider">
+                        
+                       
+                       <div>
+                            <!--<img src="../../assets/images/green_screen1.png" />-->
+                            
+                        </div>
+                            
+                        <div>
+                            
+                            <img src="../../assets/images/new-content1.png" />
+                            
+                        </div>
+
+                         
+  
+                        <div>
+                            <img src="../../assets/images/new-content2.png" />
+                            
+                        </div>
+  
+                       
+                    </div>
   </div>
-</div>  
+  
+ 
 
 <style>
     .right.carousel-control, .left.carousel-control {
@@ -64,6 +89,9 @@ img{
 #slides_control {
   position:absolute;
   width: 800px;
+  background-image: url("../../assets/images/green_screen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   /*left:40%;
   top:15%;
  margin-left:-200px;*/
@@ -94,3 +122,4 @@ right: 0;
    
 }
 </style>
+

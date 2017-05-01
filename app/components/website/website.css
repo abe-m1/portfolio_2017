@@ -232,6 +232,7 @@ img {
    background-size: cover;
    height: 100vh;
    width: 100%;
+   position: relative;
 }
 
 .flex-container5{    
@@ -497,6 +498,12 @@ img {
     display:none;
 }
 
+.mobile-desk-end {
+    display:none;
+}
+
+
+
 .yellow-tail {
     font-family: 'Yellowtail', cursive;
     font-size: 28px;
@@ -650,7 +657,7 @@ img {
     }*/
     .cityscape{    
         display: block;
-        background: url('../../assets/images/small-bg.png') no-repeat center right;
+        background: url('../../assets/images/z-phone.png') no-repeat center right;
         background-size: cover;
         height: 100vh;
         width: 100%;
@@ -667,7 +674,7 @@ img {
 
     .flex-container3{    
         display: block;
-        background: url('../../assets/images/sml-conf.png') no-repeat center right;
+        background: url('../../assets/images/z-conf1.png') no-repeat center right;
         background-size: cover;
         width: 100%;
         width: 100%;
@@ -801,6 +808,18 @@ img {
         margin-top: 0px;
         text-align: center;
         color: #88CEEF;
+    }
+
+    .mobile-desk-end {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        padding-top: 30%;
+        margin: 0 auto;
+        text-align: center;
+        color: #88CEEF;
+
     }
 
 

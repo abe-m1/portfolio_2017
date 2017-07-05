@@ -532,6 +532,9 @@ img {
     .wrapper{
         max-width: 1440px;
     }
+     .inner1A {
+       width: 120%;  
+     }
 }
  /*MEDIA QUERIES 1140*/
 @media screen and (max-width: 1140px){
